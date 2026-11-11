@@ -1,107 +1,63 @@
+ /* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    margin: 0px;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-    color: #222;
-    margin-top: 25px;
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 20px 0 40px 0;
 }
 
-.main-content {
-    flex: 1;
+a {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.menu {
-    display: flex;
-    list-style-type: none;
-    background-color: darkgray;
-    gap: 20px;
-    justify-content: center;
-    padding: 12px;
-    margin: 0 0 20px 0;
-    border-radius: 8px;
+a:hover, a.actiu {
+  color: #2563eb;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+
+h1, h2, h3 {
+  color: #111827;
+  margin-bottom: 15px;
 }
 
-.menu li a:hover {
-    color: lightblue;
+h3 {
+  margin-top: 30px;
 }
 
 p {
-    color: #333;
-    line-height: 1.5;
+  margin-bottom: 15px;
+  color: #4b5563;
 }
 
 img {
-    border: 5px solid red;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    display: inline-block;
+  width: calc(33.33% - 10px);
+  height: 200px;              
+  object-fit: cover;          
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.timetable {
-    width: 100%;
-    max-width: 900px;
-    margin: 20px auto;
-    border-collapse: separate;
-    border-spacing: 5px;
-}
 
-.timetable th, .timetable td {
-    border: 1px solid #000;
-    outline: 1px solid #000;
-    outline-offset: 2px;
-    padding: 12px 10px;
-    text-align: left;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    background-color: #fff;
-    color: #000;
-}
-
-.timetable th, .time-col {
-    font-weight: bold;
-}
-
-.angles { background-color: #92ced6 !important; }
-.xarxes { background-color: #df9477 !important; }
-.muntatge { background-color: #f7cbb4 !important; }
-.optatiu { background-color: #cc99cc !important; }
-.sistemes { background-color: #ff66cc !important; }
-.tutoria { background-color: #cc99ff !important; }
-.ofimatica { background-color: #ccff99 !important; }
-.itinerari { background-color: #99ffcc !important; }
-.sostenibilitat { background-color: #b3b3cc !important; }
-.digitalitzacio { background-color: #e6ff99 !important; }
-
-.descans {
-    font-style: italic;
-}
-
-.site-footer {
-    color: white;
-    background-color:  darkgray;
-    padding: 15px;
-    text-align: center;
-    margin-top: auto;
-}
-
-.footer-text {
-    margin: 0;
-    color: white !important;
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
 }
