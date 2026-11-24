@@ -172,7 +172,7 @@ button {
     border-radius: 5px;
     padding: 12px 24px;
     cursor: pointer;
-    align-self: flex-start; /* Posa el botó a l'esquerra i amb la seva mida justa */
+    align-self: flex-start;
 }
 
 button:hover {
