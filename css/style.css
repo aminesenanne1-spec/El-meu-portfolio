@@ -1,81 +1,56 @@
 
-/* CONFIGURACIÓ GENERAL */
-
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9fafb;
+    background: #f9fafb;
     color: #1f2937;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
-/* CAPÇALERA */
+/* CAPÇALERA I MENÚ */
 
-header, .site-header {
-    background-color: white;
+header, footer {
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
     text-align: center;
 }
-
-header h1 {
-    text-align: center;
-    margin: 15px auto;
-    color: #111827;
-}
-
-/* MENÚ DE NAVEGACIÓ */
 
 .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
     list-style: none;
     padding: 0;
-    margin: 15px 0;
 }
 
-.menu li a {
+.menu a {
     display: block;
-    text-decoration: none;
-    color: white;
-    background-color: #34495e;
     padding: 12px 25px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
 }
 
-.menu li a:hover,
-.menu li a.actiu {
-    background-color: #2980b9;
+.menu a:hover, .menu a.actiu {
+    background: #2980b9;
 }
 
-/* CONTINGUT PRINCIPAL */
+/* CONTINGUT */
 
 main {
     margin-top: 30px;
 }
 
-h1 {
-    font-size: 32px;
+h1, h2 {
     color: #111827;
-}
-
-h2 {
-    font-size: 25px;
-    color: #111827;
-    margin-top: 30px;
-}
-
-h3 {
-    color: #1f2937;
 }
 
 p {
@@ -83,37 +58,19 @@ p {
     line-height: 1.6;
 }
 
-li {
-    line-height: 1.6;
-}
-
-/* FOTO DE PERFIL */
-
 .foto-perfil {
     width: 250px;
-    max-width: 100%;
     height: 250px;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-/* PEU DE PÀGINA */
-
-footer, .site-footer {
-    text-align: center;
+footer {
     margin-top: 50px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
 }
 
-.footer-text {
-    color: #4b5563;
-    font-size: 14px;
-    margin: 0;
-}
-
-/* HORARI DE CLASSES */
+/* HORARI */
 
 .table-container {
     overflow-x: auto;
@@ -123,205 +80,117 @@ footer, .site-footer {
     width: 100%;
     min-width: 900px;
     border-collapse: collapse;
-    background-color: white;
+    background: white;
 }
 
-.timetable th,
-.timetable td {
+.timetable th, .timetable td {
     border: 1px solid #ccc;
     padding: 15px;
     text-align: center;
 }
 
-.timetable th,
-.descans {
-    background-color: #e5e7eb;
+.timetable th, .descans {
+    background: #e5e7eb;
     font-weight: bold;
 }
 
-/* COLORS DE LES ASSIGNATURES */
+.angles { background: #A7D4D7; }
+.xarxes { background: #A97866; color: white; }
+.muntatge { background: #F7D0C2; }
+.optatiu { background: #B05BB0; color: white; }
+.sistemes { background: #E65BE2; color: white; }
+.ipo { background: #8DF58F; }
+.aplicacions { background: #C9D982; }
+.sosteniment { background: #BDB2ED; }
+.digitalitzacio { background: #D9DDA2; }
 
-.angles {
-    background-color: #A7D4D7;
-}
-
-.xarxes {
-    background-color: #A97866;
-    color: white;
-}
-
-.muntatge {
-    background-color: #F7D0C2;
-}
-
-.optatiu {
-    background-color: #B05BB0;
-    color: white;
-}
-
-.sistemes {
-    background-color: #E65BE2;
-    color: white;
-}
-
-.ipo {
-    background-color: #8DF58F;
-}
-
-.aplicacions {
-    background-color: #C9D982;
-}
-
-.sosteniment {
-    background-color: #BDB2ED;
-}
-
-.digitalitzacio {
-    background-color: #D9DDA2;
-}
-
-/* FORMULARI DE CONTACTE */
+/* FORMULARI */
 
 form {
-    background-color: white;
+    background: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 25px;
-    width: 95%;
     max-width: 800px;
-    margin: 20px auto 30px auto;
-    display: flex;
-    flex-direction: column;
+    margin: 20px auto;
 }
-
-/* GRUPS DEL FORMULARI */
 
 fieldset {
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 20px;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px;
     min-width: 0;
 }
 
 legend {
-    font-family: Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: #111827;
     padding: 0 10px;
 }
 
-/* ETIQUETES DEL FORMULARI */
-
-form label {
+label {
     display: block;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
     font-weight: bold;
-    color: #111827;
     margin-bottom: 8px;
 }
 
-/* CAMPS DEL FORMULARI */
-
-form input,
-form select,
-form textarea {
+input, select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid #aaa;
     border-radius: 6px;
-    background-color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
+    font: inherit;
     margin-bottom: 20px;
 }
 
-/* VALIDACIÓ DELS CAMPS */
-
-form input:invalid {
+input:invalid {
     border-color: #dc2626;
 }
 
-form input:valid {
+input:valid {
     border-color: #16a34a;
 }
 
-/* CAMPS SELECCIONATS */
-
-form input:focus,
-form select:focus,
-form textarea:focus {
-    border-color: #2980b9;
-    outline: none;
-    box-shadow: 0 0 4px #2980b9;
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #2980b9;
 }
 
-/* ANYS D'EXPERIÈNCIA */
-
-form input[type="range"] {
-    width: 100%;
-    padding: 0;
-    accent-color: #2980b9;
-    cursor: pointer;
-    margin: 15px 0 30px 0;
-    box-shadow: none;
-}
-
-/* LLENGUATGES I NIVELL D'ANGLÈS */
+/* CHECKBOX, RADIO I RANGE */
 
 .opcions {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .opcions label {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     font-weight: normal;
     margin: 0;
 }
 
-form input[type="checkbox"],
-form input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
     width: auto;
     margin: 0;
+}
+
+input[type="range"] {
     padding: 0;
+}
+
+input {
     accent-color: #2980b9;
-    cursor: pointer;
-    box-shadow: none;
 }
 
-/* SELECTOR DE PAÏSOS */
-
-form select {
-    cursor: pointer;
-}
-
-/* ROLS PREFERITS */
-
-form select[multiple] {
-    min-height: 120px;
-    padding: 10px;
-}
-
-form select option {
-    padding: 5px;
-}
-
-/* MISSATGE */
-
-form textarea {
-    min-height: 130px;
+textarea {
+    min-height: 110px;
     resize: vertical;
 }
 
-/* BOTONS DEL FORMULARI */
+/* BOTONS */
 
 .botons {
     display: flex;
@@ -330,103 +199,31 @@ form textarea {
     gap: 15px;
 }
 
-form button {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 24px;
+button {
+    background: #2980b9;
+    color: white;
+    border: 2px solid #2980b9;
     border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-/* BOTÓ ENVIAR */
-
-form button[type="submit"] {
-    background-color: #2980b9;
-    color: white;
-    border: 2px solid #2980b9;
-}
-
-form button[type="submit"]:hover {
-    background-color: #34495e;
-    border-color: #34495e;
-}
-
-/* BOTÓ ESBORRAR */
-
-form button[type="reset"] {
-    background-color: transparent;
+button[type="reset"] {
+    background: white;
     color: #2980b9;
-    border: 2px solid #2980b9;
 }
 
-form button[type="reset"]:hover {
-    background-color: #e5e7eb;
+button:hover {
+    opacity: 0.8;
 }
 
 /* ADAPTACIÓ A MÒBILS */
 
 @media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 25px;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu li {
-        width: 100%;
-    }
-
-    .menu li a {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 26px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    form {
-        width: 100%;
-        padding: 15px;
-    }
-
-    fieldset {
-        padding: 12px;
-    }
-
-    legend {
-        font-size: 18px;
-    }
-
-    .opcions {
-        gap: 12px;
-    }
-
-    .botons {
-        flex-direction: column;
-    }
-
-    .botons button {
-        width: 100%;
-    }
-
-    .foto-perfil {
-        max-width: 100%;
-    }
+    body { padding: 10px; }
+    .menu { flex-direction: column; gap: 10px; }
+    form { padding: 15px; }
+    fieldset { padding: 12px; }
+    .botons button { width: 100%; }
 }
