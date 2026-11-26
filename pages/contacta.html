@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El meu portfolio - Contacta</title>
-     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -18,30 +19,151 @@
         </ul>
     </header>
 
-    <h1>Contacta amb mi</h1>
+    <main>
+        <h1>Contacta amb mi</h1>
 
-    <form action="#" method="post">
-        <label for="nom">Nom complet</label>
-        <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom...">
-        <br>
+        <form action="#" method="post">
 
-        <label for="email">Correu electrònic</label>
-        <input type="email" id="email" name="email" placeholder="nom@exemple.com">
-        <br>
+            <fieldset>
+                <legend>Dades personals</legend>
 
-        <label for="assumpte">Assumpte</label>
-        <input type="text" id="assumpte" name="assumpte" placeholder="Motiu del missatge...">
-        <br>
+                <label for="nom">Nom i cognoms</label>
+                <input type="text" id="nom" name="nom" required>
 
-        <label for="missatge">Missatge</label>
-        <textarea id="missatge" name="missatge" placeholder="Escriu el teu missatge aquí..."></textarea>
-        <br>
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required>
 
-        <button type="submit">Enviar missatge</button>
-    </form>
+                <label for="telefon">Telèfon</label>
+                <input type="tel" id="telefon" name="telefon"
+                    placeholder="9 xifres" pattern="[0-9]{9}">
+
+                <label for="data">Data de naixement</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="">Tria un país</option>
+                    <option value="espanya">Espanya</option>
+                    <option value="marroc">Marroc</option>
+                    <option value="franca">França</option>
+                    <option value="italia">Itàlia</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="altres">Altres</option>
+                </select>
+
+                <label for="ciutat">Ciutat</label>
+                <input type="text" id="ciutat" name="ciutat">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil tècnic</legend>
+
+                <label for="experiencia">Anys d'experiència</label>
+                <input type="range" id="experiencia"
+                    name="experiencia" min="0" max="40" value="5">
+
+                <fieldset>
+                    <legend>Llenguatges que domines</legend>
+
+                    <div class="opcions">
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="HTML">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="CSS">
+                            CSS
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="JavaScript">
+                            JavaScript
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="PHP">
+                            PHP
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="Python">
+                            Python
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="llenguatges[]" value="Java">
+                            Java
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nivell d'anglès</legend>
+
+                    <div class="opcions">
+                        <label>
+                            <input type="radio" name="angles" value="A2">
+                            A2
+                        </label>
+
+                        <label>
+                            <input type="radio" name="angles" value="B1">
+                            B1
+                        </label>
+
+                        <label>
+                            <input type="radio" name="angles" value="B2">
+                            B2
+                        </label>
+
+                        <label>
+                            <input type="radio" name="angles" value="C1">
+                            C1
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label for="rols">Rols preferits</label>
+                <select id="rols" name="rols[]" multiple size="4">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="devops">DevOps</option>
+                    <option value="dades">Dades</option>
+                </select>
+
+                <label for="github">URL de GitHub</label>
+                <input type="url" id="github" name="github"
+                    placeholder="https://github.com/usuari">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Missatge</legend>
+
+                <label for="assumpte">Assumpte</label>
+                <input type="text" id="assumpte" name="assumpte"
+                    placeholder="Motiu del missatge...">
+
+                <label for="missatge">Missatge</label>
+                <textarea id="missatge" name="missatge"
+                    placeholder="Escriu el teu missatge aquí..."></textarea>
+
+            </fieldset>
+
+            <div class="botons">
+                <button type="reset">Esborra-ho tot</button>
+                <button type="submit">Envia</button>
+            </div>
+
+        </form>
+    </main>
 
     <footer class="site-footer">
-        <p class="footer-text">© 2026 Portfoli de l'Amine Sennane. Tots els drets reservats.</p>
+        <p class="footer-text">
+            © 2026 Portfoli de l'Amine Sennane. Tots els drets reservats.
+        </p>
     </footer>
 
 </body>
